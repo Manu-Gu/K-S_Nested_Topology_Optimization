@@ -56,7 +56,7 @@ python experiments/exp_compare_nested_flat_rho_fixed_centers.py
 
 > ⚠️ **Computational Cost Note:**
 > - Standard $20 \times 10$ benchmarks (e.g., parameter scaling, filter radius sensitivity) typically converge within a few minutes on a standard desktop CPU.
-> - The refined $40 \times 20$ mesh independence verification involves an $O(N^3)$ sparse solver scaling and may require 2~4 hours.
+
 
 ### Step 2: Generate Figures
 
@@ -88,5 +88,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions regarding the mathematical framework, implementation details, or the paper itself, please open an issue on GitHub or contact the corresponding author at: [Manu_Gu@163.com](mailto:Manu_Gu@163.com).
+For any questions regarding the mathematical framework, implementation details, or the paper itself, please open an issue on GitHub or contact the  author at: [Manu_Gu@163.com](mailto:Manu_Gu@163.com).
 
