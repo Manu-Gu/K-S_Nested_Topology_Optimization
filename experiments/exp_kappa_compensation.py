@@ -16,27 +16,16 @@ from src.topopt.problem import TopOptProblem
 from src.topopt.feasibility import find_eps_c
 from src.topopt.ks_layers import three_layer_G
 
-class CantileverBaseline(TopOptProblem):
-    """Specific 20x10 boundary condition definitions for the compensation test."""
-    def __init__(self, nelx: int = 20, nely: int = 10, volfrac: float = 0.5, penal: float = 3.0, rmin: float = 1.5):
-        super().__init__(nelx, nely, volfrac, penal, rmin)
-        
-        self.F = np.zeros(self.ndof)
-        bottom_right_node = (self.nelx + 1) * (self.nely + 1) - 1
-        self.F[2 * bottom_right_node + 1] = -1.0
-        
-        left_edge_nodes = np.arange(self.nely + 1)
-        self.fixed = np.union1d(2 * left_edge_nodes, 2 * left_edge_nodes + 1)
-
 def run_kappa_compensation() -> None:
     print("Starting Stratified Kappa Compensation Experiment (20x10)...")
-    problem = CantileverBaseline(nelx=20, nely=10, rmin=1.5)
+    problem = TopOptProblem(nelx=20, nely=10, rmin=1.5)
     
     print("Computing baseline structure...")
     x_base = problem.baseline()
     
-    # Standard 20x10 monitoring centers
-    fixed_centers = [(5,6), (5,3), (8,2)]
+    # 自适应提取监控中心
+    fixed_centers = problem.get_three_centers(x_base)
+    print(f"Adaptively extracted centers: {fixed_centers}")
     
     scenarios = [
         {"name": "Nested: Uniform", "kappas": (20, 20, 20)},

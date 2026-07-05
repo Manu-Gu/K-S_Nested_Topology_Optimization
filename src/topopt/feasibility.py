@@ -40,7 +40,7 @@ def find_eps_c(problem,
             return eps - G_func(x, rho)
 
         constraints = [
-            {'type': 'ineq', 'fun': lambda x: problem.volfrac - np.mean(x)},
+            {'type': 'eq', 'fun': lambda x: problem.volfrac - np.mean(x)},
             {'type': 'ineq', 'fun': ks_constraint}
         ]
 

@@ -1,9 +1,12 @@
-
 __pycache__/
 *.py[cod]
 *$py.class
 
-
 venv/
 env/
 .conda/
+.vscode/
+
+results/data/*.npz
+*.log
+*.pdf

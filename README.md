@@ -5,7 +5,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 This repository contains the official Python source code for the paper:
-**"Feasible-set geometry of nested KS constraints in topology optimization: Mechanism, quantification, and compensation"** (Submitted to *Finite Elements in Analysis and Design*).
+**"Feasible-set geometry of nested KS constraints in topology optimization: Mechanism, quantification, and compensation"** (Submitted to *Structural and Multidisciplinary Optimization*).
 
 ## Overview
 
@@ -63,7 +63,7 @@ python experiments/exp_compare_nested_flat_rho_fixed_centers.py
 Once the data is generated, you can recreate all the exact figures (Fig 1 through Fig 6, plus Supplementary figures) used in the paper. The plotting pipeline automatically utilizes LaTeX rendering (if available) and an advanced hash-caching mechanism to avoid redundant optimization runs.
 
 ```bash
-python plotting/generate_all_figures.py
+python plotting/plot_all_figures_ultimate.py
 ```
 *Generated figures will be saved as high-resolution PDFs and PNGs in the `results/figures/` directory.*
 
@@ -75,7 +75,7 @@ If you find this code or our theoretical framework useful in your research, plea
 @article{gu2026feasible,
   title={Feasible-set geometry of nested KS constraints in topology optimization: Mechanism, quantification, and compensation},
   author={Gu, Hengdong},
-  journal={Finite Elements in Analysis and Design},
+  journal={Structural and Multidisciplinary Optimization},
   year={2026},
   note={Submitted}
 }
@@ -88,5 +88,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions regarding the mathematical framework, implementation details, or the paper itself, please open an issue on GitHub or contact the  author at: [Manu_Gu@163.com](mailto:Manu_Gu@163.com).
+For any questions regarding the mathematical framework, implementation details, or the paper itself, please open an issue on GitHub or contact the  author at: [HengdongGu@buaa.edu.cn](mailto:HengdongGu@buaa.edu.cn).
 
