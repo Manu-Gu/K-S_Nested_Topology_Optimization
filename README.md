@@ -5,7 +5,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 This repository contains the official Python source code for the paper:
-**"Feasible-set geometry of nested KS constraints in topology optimization: Mechanism, quantification, and compensation"** (Submitted to *Structural and Multidisciplinary Optimization*).
+**"Feasible-set geometry of nested KS constraints in topology optimization: Mechanism, quantification, and compensation"** (Submitted to *Results in Engineering*).
 
 ## Overview
 
@@ -75,7 +75,7 @@ If you find this code or our theoretical framework useful in your research, plea
 @article{gu2026feasible,
   title={Feasible-set geometry of nested KS constraints in topology optimization: Mechanism, quantification, and compensation},
   author={Gu, Hengdong},
-  journal={Structural and Multidisciplinary Optimization},
+  journal={Results in Engineering},
   year={2026},
   note={Submitted}
 }
@@ -88,5 +88,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions regarding the mathematical framework, implementation details, or the paper itself, please open an issue on GitHub or contact the  author at: [HengdongGu@buaa.edu.cn](mailto:HengdongGu@buaa.edu.cn).
+For any questions regarding the mathematical framework, implementation details, or the paper itself, please open an issue on GitHub or contact the author at: [HengdongGu@buaa.edu.cn](mailto:HengdongGu@buaa.edu.cn).
 
